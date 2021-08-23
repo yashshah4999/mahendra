@@ -1,0 +1,19 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Become vendor | {% endblock %}
+
+{% block content %}
+    <h1 class="title">Become a vendor</h1>
+
+    <h2>Contact our developer</h2>
+    <a href="tel:+917798854999">Call</a>
+
+    <br>
+    
+    <a href="mailto:yashchetanshah@outlook.com">E-mail</a>
+    <hr>
+
+    <h2 class="subtitle">Already have an account?</h2>
+
+    <a href="{% url 'login' %}">Log in</a>
+{% endblock %}
