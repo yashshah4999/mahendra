@@ -25,7 +25,7 @@ SECRET_KEY = '9qch@^=h6+l#$$^*t+$&nk#qdgpwse+qlw$**w&07$lx1j2fqq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1','my-kirana.herokuapp.com']
 
 LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = 'vendor_admin'
