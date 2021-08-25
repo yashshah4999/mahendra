@@ -94,6 +94,3 @@ def vendor(request, vendor_id):
     vendor = get_object_or_404(Vendor, pk=vendor_id)
 
     return render(request, 'vendor/vendor.html', {'vendor': vendor})
-
-def developer(request):
-    return render(request, 'vendor/developer.html')
