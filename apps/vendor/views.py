@@ -1,6 +1,7 @@
 from django.contrib.auth import login
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
+from django.forms.widgets import DateInput
 from django.utils.text import slugify
 from django.shortcuts import render, redirect, get_object_or_404
 
@@ -17,7 +18,7 @@ def become_vendor(request):
 
             login(request, user)
 
-            vendor = Vendor.objects.create(name=user.username, created_by=user)
+            vendor = Vendor.objects.create(name=user.username, created_by=user, created_at=DateInput)
 
             return redirect('frontpage')
     else:
